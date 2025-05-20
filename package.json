@@ -1,11 +1,16 @@
 {
-  "name": "backend",
+  "name": "seu-backend-json-server",
   "version": "1.0.0",
+  "description": "JSON Server para o app Angular",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-server": "^0.17.0"
+  }
 }
