@@ -1,5 +1,5 @@
 const jsonServer = require('json-server');
-const path = require('path');
+const path = require('path'); 
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json')); 
 const middlewares = jsonServer.defaults();
@@ -16,7 +16,7 @@ server.use(jsonServer.bodyParser);
 
 const allowedOrigins = [
   'http://localhost:4200',
-  'https://testflow-app-mu.vercel.app' 
+  'testflow-oabm6cwm9-mdprogramados-projects.vercel.app' 
 ];
 
 server.use(cors({
